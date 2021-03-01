@@ -64,7 +64,7 @@ const bodyParser = require('body-parser');
      saveUninitialized: false,
      cookie: {
          // The max age of cookie
-         maxAge= 1000*60*60*24*24*14
+         maxAge: 1000*60*60*24*14
      }
 
  }))
