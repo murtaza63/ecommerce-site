@@ -1,0 +1,280 @@
+{
+	"id": "b88f82cf-df91-2b6b-4b62-e54a54331fc6",
+	"name": "ecommerce-collection-Step 4A",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"f29735fc-8152-3299-5286-b0ea4045f136",
+		"2c4aea0c-7e90-598e-471d-faf9bb9468e9",
+		"a7c3a639-2f34-5e09-07cc-44ce3170711d",
+		"af6a3d7a-ee58-293d-33a8-ae5d50e8a462",
+		"a241554a-f00a-f25d-751d-0d7bad63b6bc",
+		"8937354b-593d-4006-0a9b-4c81184a2115",
+		"1fb68cc5-308c-9d66-d2f5-0bff1a66f057"
+	],
+	"folders_order": [],
+	"folders": [],
+	"owner": 0,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "1fb68cc5-308c-9d66-d2f5-0bff1a66f057",
+			"name": "Create Product",
+			"url": "http://localhost:4000/api/products",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ea05c204-9b07-473b-961c-deebe866f620",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": null,
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "b88f82cf-df91-2b6b-4b62-e54a54331fc6",
+			"rawModeData": "{\n\t\"name\": \"Basketball\",\n\t\"description\": \"A Nice Basketball\",\n\t\"price\": 50\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {},
+			"collection_id": "b88f82cf-df91-2b6b-4b62-e54a54331fc6"
+		},
+		{
+			"id": "2c4aea0c-7e90-598e-471d-faf9bb9468e9",
+			"name": "Login User",
+			"url": "http://localhost:4000/api/login",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4c6f1e1b-edaa-4d75-8696-b4ef44b0582d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": null,
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "b88f82cf-df91-2b6b-4b62-e54a54331fc6",
+			"rawModeData": "{\n\t  \"sub\": \"github|23343715\",\n\t  \"nickname\": \"AliA1997\",\n\t  \"name\": \"Ali Qassem Alhaddad\",\n\t  \"picture\": \"https://avatars1.githubusercontent.com/u/23343715?v=4\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {},
+			"collection_id": "b88f82cf-df91-2b6b-4b62-e54a54331fc6"
+		},
+		{
+			"id": "8937354b-593d-4006-0a9b-4c81184a2115",
+			"name": "Get All Products",
+			"url": "http://localhost:4000/api/products",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bb9bcf4b-5497-46de-b0df-1c3ceb3da1cb",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": null,
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "b88f82cf-df91-2b6b-4b62-e54a54331fc6",
+			"headers": "",
+			"pathVariables": {},
+			"collection_id": "b88f82cf-df91-2b6b-4b62-e54a54331fc6"
+		},
+		{
+			"id": "a241554a-f00a-f25d-751d-0d7bad63b6bc",
+			"name": "Get Product",
+			"url": "http://localhost:4000/api/products/5b3db96b4c934d1a078219d8",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "14322381-8238-4a00-879a-f725ced0898b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": null,
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "b88f82cf-df91-2b6b-4b62-e54a54331fc6",
+			"headers": "",
+			"pathVariables": {},
+			"collection_id": "b88f82cf-df91-2b6b-4b62-e54a54331fc6"
+		},
+		{
+			"id": "a7c3a639-2f34-5e09-07cc-44ce3170711d",
+			"name": "Delete Product",
+			"url": "http://localhost:4000/api/products/5b3dbaff2bae8e1a2ad6ed59",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a0fc1620-df05-4edb-9d7a-520518566614",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": null,
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "b88f82cf-df91-2b6b-4b62-e54a54331fc6",
+			"headers": "",
+			"pathVariables": {},
+			"collection_id": "b88f82cf-df91-2b6b-4b62-e54a54331fc6"
+		},
+		{
+			"id": "af6a3d7a-ee58-293d-33a8-ae5d50e8a462",
+			"name": "Update Product",
+			"url": "http://localhost:4000/api/products/5b61d670a0b6670c2dd85d25",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "50165f73-26bf-4ac8-81da-dbf4da38d2b1",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": null,
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "b88f82cf-df91-2b6b-4b62-e54a54331fc6",
+			"rawModeData": "{\n\t\"name\": \"Soccer Ball\",\n\t\"description\": \"A nice soccer ball\",\n\t\"price\": 10\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {},
+			"collection_id": "b88f82cf-df91-2b6b-4b62-e54a54331fc6"
+		},
+		{
+			"id": "f29735fc-8152-3299-5286-b0ea4045f136",
+			"name": "Get All Users",
+			"url": "http://localhost:4000/api/users",
+			"description": null,
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "60b1feaa-4aed-4f85-acbb-7ad462bc4f9a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": null,
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "b88f82cf-df91-2b6b-4b62-e54a54331fc6",
+			"headers": "",
+			"pathVariables": {},
+			"collection_id": "b88f82cf-df91-2b6b-4b62-e54a54331fc6"
+		}
+	]
+}
